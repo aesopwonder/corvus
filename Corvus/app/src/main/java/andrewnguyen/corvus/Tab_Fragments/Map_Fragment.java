@@ -52,7 +52,7 @@ public class Map_Fragment extends Fragment {
                 return true;
             }
         });
-        webView.loadUrl("http://172.16.30.126:8000/maplowfi.html");
+        webView.loadUrl("http://172.16.30.98:8000/maplowfi.html");
     }
     public static void onBackPressed(){
         Map_Fragment mf= new Map_Fragment();

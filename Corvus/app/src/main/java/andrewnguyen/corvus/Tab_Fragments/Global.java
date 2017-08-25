@@ -10,6 +10,28 @@ import andrewnguyen.corvus.Data.List_Item;
  */
 
 public class Global {
+    public static double wallet_total = 37.50;
+
+    public static double audio_usage = 0.00;
+
+    public static double getAudio_usage() {
+        return audio_usage;
+    }
+
+    public static void addAudio_usage() {
+        Global.audio_usage +=4;
+        //TODO Change for change in price
+    }
+
+    public static double getWallet_total() {
+        return wallet_total;
+    }
+
+    public static void subtract_Wallet_total() {
+        Global.wallet_total -= 4;
+    }
+    //TODO Change for change in price
+
     public static List<List_Item> device_list = new ArrayList<>();
     public List<List_Item> getDevice_list() {
         System.out.println("GLOBAL Device List size" + device_list.size());

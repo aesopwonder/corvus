@@ -8,12 +8,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 
-import com.google.android.gms.maps.MapFragment;
-
 import andrewnguyen.corvus.Adapters.FragmentAdapter;
 import andrewnguyen.corvus.Tab_Fragments.TabFragmentOne;
 import andrewnguyen.corvus.Tab_Fragments.Map_Fragment;
-import andrewnguyen.corvus.Tab_Fragments.TabFragmentTwo;
+import andrewnguyen.corvus.Tab_Fragments.Account_Fragment;
 
 
 public class Main_Activity extends AppCompatActivity {
@@ -43,7 +41,7 @@ public class Main_Activity extends AppCompatActivity {
         FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager());
         adapter.addFragment(TabFragmentOne.newInstance("Frag: Fragment 1"), "Frag 1 Created");
         adapter.addFragment(Map_Fragment.newInstance("Frag: Fragment 3"), "Frag 3 Created");
-        adapter.addFragment(TabFragmentTwo.newInstance("Frag: Fragment 2"), "Frag 2 Created");
+        adapter.addFragment(Account_Fragment.newInstance("Frag: Fragment 2"), "Frag 2 Created");
         viewPager.setAdapter(adapter);
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             public void onPageScrollStateChanged(int state) {}
@@ -52,6 +50,9 @@ public class Main_Activity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 p= position;
                 if(position == 1){
+
+                }
+                if(position == 2){
 
                 }
             }
@@ -70,6 +71,4 @@ public class Main_Activity extends AppCompatActivity {
         startActivity(i);
         finish();
     }
-
-
 }

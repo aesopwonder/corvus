@@ -94,8 +94,8 @@ public class Get_Count_Async extends AsyncTask<String, Void, String> {
                 String token = data.getString(KEY_TOKEN);
                 if(!token.equals("0")){
                     Global global = new Global();
-                    global.subtract_Wallet_total();
-                    global.addAudio_usage();
+                    global.add_Wallet_total();
+//                    global.addAudio_usage();
                     System.out.println("Token = " + token);
 
                 }

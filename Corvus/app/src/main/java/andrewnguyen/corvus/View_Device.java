@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 import andrewnguyen.corvus.Data.List_Item;
@@ -99,8 +100,15 @@ public class View_Device extends AppCompatActivity {
         disappear_on_click(radio_price, radio_price_final);
     }
     private void total_summation(){
-        total_doub = Double.parseDouble(amount_audio)+Double.parseDouble(amount_video)+Double.parseDouble(amount_radio);
-        total_str = Double.toString(total_doub);
+//        total_doub = Double.parseDouble(amount_audio)+Double.parseDouble(amount_video)+Double.parseDouble(amount_radio);
+//        total_str = Double.toString(total_doub);
+
+        //extra---------
+        Global global = new Global();
+        double audio_service = global.getTotal_service();
+        final DecimalFormat df = new DecimalFormat( "0.00" );
+        total_str = df.format(audio_service);
+        //extra---------
         total.setText(total_str + " USD");
     }
     private void variable_initialization(Bundle extras){

@@ -4,7 +4,7 @@ android {
     compileSdkVersion 24
     buildToolsVersion "24.0.1"
     defaultConfig {
-        applicationId "andrewnguyen.polytopmockup"
+        applicationId "andrewnguyen.corvus"
         minSdkVersion 16
         targetSdkVersion 24
         versionCode 1
@@ -37,7 +37,5 @@ repositories {
 }
 
 dependencies {
-    compile ('com.mapbox.mapboxsdk:mapbox-android-sdk:5.1.0@aar'){
-        transitive=true
-    }
+    compile 'com.android.support:multidex:1.0.1'
 }

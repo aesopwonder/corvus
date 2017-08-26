@@ -14,6 +14,12 @@ public class Global {
 
     public static double audio_usage = 0.00;
 
+    public static double total_service = 0.00;
+
+    public static double getTotal_service() {
+        return total_service;
+    }
+
     public static double getAudio_usage() {
         return audio_usage;
     }
@@ -29,6 +35,10 @@ public class Global {
 
     public static void subtract_Wallet_total() {
         Global.wallet_total -= 4;
+    }
+    public static void add_Wallet_total(){
+        Global.wallet_total +=4;
+        total_service +=4;
     }
     //TODO Change for change in price
 

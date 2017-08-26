@@ -42,33 +42,33 @@ public class Splash extends Permissions {
         hypergraph_animation_drawable.start();
 
         fake_device_1 = new List_Item();
-        fake_device_2 = new List_Item();
+//        fake_device_2 = new List_Item();
 
-        fake_device_1.setName("Model A");
+        fake_device_1.setName("Tampa, Fl - Pi Node");
         fake_device_1.setStatus("OK");
-        fake_device_1.setPrice_audio("0.6");
-        fake_device_1.setPrice_video("1.8");
-        fake_device_1.setPrice_radio("1.2");
-        fake_device_1.setAmount_audio((".80"));
-        fake_device_1.setAmount_radio(("1.0"));
-        fake_device_1.setAmount_video(("1.2"));
-        fake_device_1.setAudio("ON");
-        fake_device_1.setVideo("ON");
+        fake_device_1.setPrice_audio("0");
+        fake_device_1.setPrice_video("0");
+        fake_device_1.setPrice_radio("4");
+        fake_device_1.setAmount_audio(("0"));
+        fake_device_1.setAmount_radio(("0"));
+        fake_device_1.setAmount_video(("0"));
+        fake_device_1.setAudio("0");
+        fake_device_1.setVideo("0");
         fake_device_1.setRadio("ON");
+//
+//        fake_device_2.setName("Model B");
+//        fake_device_2.setStatus("BAD");
+//        fake_device_2.setPrice_audio("0");
+//        fake_device_2.setPrice_video("0");
+//        fake_device_2.setPrice_radio("1.2");
+//        fake_device_2.setAmount_audio(("0"));
+//        fake_device_2.setAmount_radio(("1.4"));
+//        fake_device_2.setAmount_video(("0"));
+//        fake_device_2.setAudio("0");
+//        fake_device_2.setVideo("0");
+//        fake_device_2.setRadio("ON");
 
-        fake_device_2.setName("Model B");
-        fake_device_2.setStatus("BAD");
-        fake_device_2.setPrice_audio("0");
-        fake_device_2.setPrice_video("0");
-        fake_device_2.setPrice_radio("1.2");
-        fake_device_2.setAmount_audio(("0"));
-        fake_device_2.setAmount_radio(("1.4"));
-        fake_device_2.setAmount_video(("0"));
-        fake_device_2.setAudio("0");
-        fake_device_2.setVideo("0");
-        fake_device_2.setRadio("ON");
-
-        global.addDevice_toList(fake_device_2);
+//        global.addDevice_toList(fake_device_2);
         global.addDevice_toList(fake_device_1);
         new Handler().postDelayed(new Runnable() {
             @Override

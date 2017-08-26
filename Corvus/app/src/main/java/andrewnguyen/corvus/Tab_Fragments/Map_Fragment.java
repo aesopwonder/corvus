@@ -13,6 +13,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import andrewnguyen.corvus.R;
+import andrewnguyen.corvus.sync.Add_Async;
 
 
 public class Map_Fragment extends Fragment {
@@ -49,6 +50,8 @@ public class Map_Fragment extends Fragment {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 view.loadUrl(url);
+//                Add_Async add_async = new Add_Async(getActivity());
+//                add_async.execute("increment");
                 return true;
             }
         });

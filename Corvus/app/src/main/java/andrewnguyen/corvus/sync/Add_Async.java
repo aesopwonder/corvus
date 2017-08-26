@@ -38,6 +38,7 @@ public class Add_Async extends AsyncTask<String, Void, String> {
         String url_s = "http://172.16.30.56:8888/add.php";
         String method = params[0];
         if (method.equals("increment")) {
+            System.out.println("ADDED ASYNC");
             String arbitrary = "";
             try {
                 URL url = new URL(url_s);
